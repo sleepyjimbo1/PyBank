@@ -36,13 +36,10 @@ net_total = sum(profits_losses)
 # The average of those changes in "Profits/Losses" over the entire period
 average_change_in_profit = total_change_in_profit / len(months)
 
-#The net total amount of "Profit/Losses" over the entire period
-
-#The changes in "Profit/Losses" over the entire period, and then the average of those changes
-
 #The greatest increase in profits (date and amount) over the entire period
 greatest_increase = max(list_of_changes)
 largest_month = months[list_of_changes.index(greatest_increase)]
+
 #The greatest decrease in profits (date and amount) over the entire period
 greatest_decrease = min(list_of_changes)
 lowest_month = months[list_of_changes.index(greatest_decrease)]
